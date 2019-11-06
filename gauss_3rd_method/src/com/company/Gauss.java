@@ -50,7 +50,7 @@ public class Gauss {
         for (int i = 0; i < matrixArr.length; i ++){
             for (int j = 0; j < 4; j ++){
                 //calculates the modal for a line
-                Cmodal[i] = Math.abs(matrixArr[i][j]);
+                Cmodal[i] += Math.abs(matrixArr[i][j]);
             }
 
         }
