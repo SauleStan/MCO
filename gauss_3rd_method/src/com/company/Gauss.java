@@ -43,12 +43,14 @@ public class Gauss {
 
 
     //checks coeficient modals and switches lines if necessary
+    //Makes a new array of coefficients. Dunno if this is needed
+    //Will probably make it without the array.
     public void switchLines(){
         double Cmodal[] = new double[3];
         for (int i = 0; i < matrixArr.length; i ++){
             for (int j = 0; j < 4; j ++){
                 //calculates the modal for a line
-                Cmodal[i] += Math.abs(matrixArr[i][j]);
+                Cmodal[i] = Math.abs(matrixArr[i][j]);
             }
 
         }
